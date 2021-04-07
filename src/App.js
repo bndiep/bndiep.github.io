@@ -23,8 +23,8 @@ function App() {
       </div>
 
       <div className="mx-8 p-8 bg-gray-500 text-gray-100 lg:mx-16">
-        <p>
-          I'm a full stack developer based in San Diego, CA.
+        <p className="inline-flex">
+          I'm a <span className="px-2 font-mono tracking-tighter">full stack developer</span> based in San Diego, CA.
           </p>
         <p>
           I'm most interested in how tech and art can brige the connection between people.
