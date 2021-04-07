@@ -1,9 +1,12 @@
 
 function App() {
   return (
-    <div className="mt-4">
-      <header className="mx-4">
-        <ul className="flex flex-row justify-end">
+    <div className="">
+      <header className="">
+        <div className="h-16 bg-gray-800 md:hidden">
+
+        </div>
+        <ul className="hidden md:flex flex-row justify-end">
           <li className="p-4"><a href="/">Home</a></li>
           <li className="p-4"><a href="#skills">Skills</a></li>
           <li className="p-4"><a href="#projects">Projects</a></li>
@@ -14,7 +17,7 @@ function App() {
         <h1 className="px-12 w-100 text-6xl">
           Hi, I'm <span className="font-bold">Bach</span>,
         </h1>
-        <h1 className="px-12 w-100 text-6xl">
+        <h1 className="px-12 w-100 text-6xl tracking-wide">
           your friendly coder.
         </h1>
       </div>
@@ -41,8 +44,8 @@ function App() {
       </div>
 
       <div className="mx-8 py-20">
-        <h2 className="py-2 text-3xl font-bold border-b-2" id="skills">Skills</h2>
-        <div className="flex flex-wrap justify-center items-start">
+        <h2 className="py-2 text-3xl font-bold tracking-widest border-b-2" id="skills">Skills</h2>
+        <div className="pt-12 flex flex-wrap justify-center items-start">
           
           <div className="m-2 w-48 border-t border-l border-r border-black rounded-lg">
             <h3 className="p-2 h-48 text-2xl border-b-2 border-black rounded-lg">Frontend</h3>
@@ -51,7 +54,7 @@ function App() {
               <li className="p-2 border-b-2 border-black rounded-lg">CSS</li>
               <li className="p-2 border-b-2 border-black rounded-lg">JavaScript</li>
               <li className="p-2 border-b-2 border-black rounded-lg">Ruby</li>
-              <li className="p-2 border-b-2 border-black rounded-lg">React</li>
+              <li className="p-2 border-b-2 border-black rounded-lg shadow-md">React</li>
             </ul>
           </div>
           
@@ -60,7 +63,7 @@ function App() {
             <ul>
               <li className="p-2 border-b-2 border-black rounded-lg">Ruby on Rails</li>
               <li className="p-2 border-b-2 border-black rounded-lg">PostgreSQL</li>
-              <li className="p-2 border-b-2 border-black rounded-lg">MySQL</li>
+              <li className="p-2 border-b-2 border-black rounded-lg shadow-md">MySQL</li>
             </ul>
           </div>
           
@@ -69,7 +72,7 @@ function App() {
             <ul>
               <li className="p-2 border-b-2 border-black rounded-lg">Git</li>
               <li className="p-2 border-b-2 border-black rounded-lg">GitHub</li>
-              <li className="p-2 border-b-2 border-black rounded-lg">GitLab</li>
+              <li className="p-2 border-b-2 border-black rounded-lg shadow-md">GitLab</li>
             </ul>
           </div>
 
@@ -77,7 +80,7 @@ function App() {
             <h3 className="p-2 h-48 text-2xl border-b-2 border-black rounded-lg">Remote Work</h3>
             <ul>
               <li className="p-2 border-b-2 border-black rounded-lg">Slack</li>
-              <li className="p-2 border-b-2 border-black rounded-lg">Zoom</li>
+              <li className="p-2 border-b-2 border-black rounded-lg shadow-md">Zoom</li>
             </ul>
           </div>
 
@@ -87,67 +90,78 @@ function App() {
               <li className="p-2 border-b-2 border-black rounded-lg">Figma</li>
               <li className="p-2 border-b-2 border-black rounded-lg">Balsamiq</li>
               <li className="p-2 border-b-2 border-black rounded-lg">Adobe Illustrator</li>
-              <li className="p-2 border-b-2 border-black rounded-lg">Affinity Designer</li>
+              <li className="p-2 border-b-2 border-black rounded-lg shadow-md">Affinity Designer</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="px-8 py-20 bg-gray-800 text-gray-200">
-        <h2 className="py-2 text-3xl font-bold" id="projects">Projects</h2>
+      <div className="px-8 py-12 bg-gray-800 text-gray-200">
+        <h2 className="py-2 text-3xl font-bold tracking-widest border-b-2" id="projects">Projects</h2>
         <div className="flex flex-col justify-center items-center">
           
-          <div className="py-8">
+          <div className="p-8">
             <h4 className="text-2xl">LifeBand</h4>
-            <p>
-              In the case of an emergency or whenever a medical professional requires a patient's medical history, LifeBand can step in to help those in need. Once a profile has been completed with the information the user would like to be known, a QR code will be generated and can be shared to the user's loved ones to redirect them to the user's profile. The profile can include a list of emergency contacts and the user's current daily medications.
-            </p>
-            <div>
-              <a href="https://fathomless-woodland-26064.herokuapp.com/">Demo</a>
-              <a href="https://github.com/Life-Science-Rejects/LifeBand">GitHub</a>
+            <div className="my-2 flex flex-col md:flex-row">
+              <span className="mr-2 p-20 bg-yellow-400 border-yellow-800 rounded-md">Placeholder</span>
+              <p className="ml-2">
+                In the case of an emergency or whenever a medical professional requires a patient's medical history, LifeBand can step in to help those in need. Once a profile has been completed with the information the user would like to be known, a QR code will be generated and can be shared to the user's loved ones to redirect them to the user's profile. The profile can include a list of emergency contacts and the user's current daily medications.
+              </p>
+              </div>
+            <div className="text-yellow-200 text-sm flex justify-end">
+              <a className="px-2" href="https://fathomless-woodland-26064.herokuapp.com/">Demo</a>
+              <a className="px-2" href="https://github.com/Life-Science-Rejects/LifeBand">GitHub</a>
             </div>
           </div>
           
-          <div className="py-8">
+          <div className="p-8">
             <h4 className="text-2xl">React Here, Tryna Function</h4>
             <p>
               An homage to E-40's song Function, this party app allows the user to input their budget and number of guests to give them a list of typical party items they will need to purchase. Go over budget, and your guests will have to pitch in.
             </p>
-            <a href="https://react-here-tryna-function-app.netlify.app">Demo</a>
-            <a href="https://github.com/bndiep/party-app">GitHub</a>
+            <div className="text-yellow-200 text-sm flex justify-end">
+              <a className="px-2" href="https://react-here-tryna-function-app.netlify.app">Demo</a>
+              <a className="px-2" href="https://github.com/bndiep/party-app">GitHub</a>
+            </div>
           </div>
           
-          <div className="py-8">
+          <div className="p-8">
             <h4 className="text-2xl">Tic-Tac-Toe</h4>
             <p>
               A simple implementation of Tic-Tac-Toe intended to be played by two users. The app will display the current player to keep track of the user's turns. There are three possible outcomes: X wins, O wins, or a cats game.
-              </p>
-            <a href="https://tictactoe-app.netlify.app"></a>
-            <a href="https://github.com/bndiep/tic-tac-toe-app"></a>
+            </p>
+            <div className="text-yellow-200 text-sm flex justify-end">
+              <a className="px-2" href="https://tictactoe-app.netlify.app"></a>
+              <a className="px-2" href="https://github.com/bndiep/tic-tac-toe-app"></a>
+            </div>
           </div>
           
-          <div className="py-8">
+          <div className="p-8">
             <h4 className="text-2xl">Pig Latin</h4>
             <p>
               An app that allows the user to convert their English words into Pig Latin. Has the ability to translate words starting with 'qu' and words in which 'y' acts a vowel. Maybe you can use this app when sending secret messages!
             </p>
-            <a href="https://react-pig-latin-app.netlify.app">Demo</a>
-            <a href="https://github.com/bndiep/pig-latin-app">GitHub</a>
+            <div className="text-yellow-200 text-sm flex justify-end">
+              <a className="px-2" href="https://react-pig-latin-app.netlify.app">Demo</a>
+              <a className="px-2" href="https://github.com/bndiep/pig-latin-app">GitHub</a>
+            </div>
           </div>   
 
-          <div className="py-8">
+          <div className="p-8">
             <h4 className="text-2xl">Blog App</h4>
             <p>
               A simple blog app that demonstrates RESTful routes. The user is able to create, view, edit, and delete a blog post. Strong params exist to ensure the user includes all fields in their blog post submission.
             </p>
-            <a href="https://github.com/bndiep/blog-app">GitHub</a>
+            <div className="text-yellow-200 text-sm flex justify-end">
+              <a className="px-2" href="https://github.com/bndiep/blog-app">GitHub</a>
+            </div>
           </div>
 
         </div>
       </div>
 
       <div className="py-16 flex justify-center">
-        <p>Interested in contacting me? Reach me <a href="mailto:bachdiep.dev@gmail.com"> here</a>.</p>
+        <p>Interested in contacting me? Reach me <a className="text-yellow-900" href="mailto:bachdiep.dev@gmail.com"> here</a>.</p>
       </div>
       
       <footer className="py-2 text-sm flex justify-center bg-gray-800 text-gray-200">Designed and built by Bach Diep using React.js and Tailwind CSS</footer>
