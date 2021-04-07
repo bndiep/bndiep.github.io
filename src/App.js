@@ -3,10 +3,10 @@ function App() {
   return (
     <div className="">
       <header className="">
-        <div className="h-16 bg-gray-800 md:hidden">
-
+        <div className="h-16 p-4 bg-gray-800 flex justify-end items-center sm:hidden">
+          <button className="w-12 h-12 text-white text-sm border border-white rounded-lg">Temp</button>
         </div>
-        <ul className="hidden md:flex flex-row justify-end">
+        <ul className="hidden sm:flex flex-row justify-end">
           <li className="p-4"><a href="/">Home</a></li>
           <li className="p-4"><a href="#skills">Skills</a></li>
           <li className="p-4"><a href="#projects">Projects</a></li>
@@ -103,8 +103,8 @@ function App() {
           <div className="p-8">
             <h4 className="text-2xl">LifeBand</h4>
             <div className="my-2 flex flex-col md:flex-row">
-              <span className="mr-2 p-20 bg-yellow-400 border-yellow-800 rounded-md">Placeholder</span>
-              <p className="ml-2">
+              <span className="mr-2 p-20 bg-yellow-400 border-yellow-200 rounded-md">Placeholder</span>
+              <p className="my-2 md:ml-2">
                 In the case of an emergency or whenever a medical professional requires a patient's medical history, LifeBand can step in to help those in need. Once a profile has been completed with the information the user would like to be known, a QR code will be generated and can be shared to the user's loved ones to redirect them to the user's profile. The profile can include a list of emergency contacts and the user's current daily medications.
               </p>
               </div>
@@ -116,9 +116,13 @@ function App() {
           
           <div className="p-8">
             <h4 className="text-2xl">React Here, Tryna Function</h4>
-            <p>
-              An homage to E-40's song Function, this party app allows the user to input their budget and number of guests to give them a list of typical party items they will need to purchase. Go over budget, and your guests will have to pitch in.
-            </p>
+            <div className="my-2 flex flex-col md:flex-row">
+              <span className="mr-2 p-20 bg-yellow-400 border-yellow-200 rounded-md">Placeholder</span>
+              <p className="my-2 md:ml-2">
+                An homage to E-40's song Function, this party app allows the user to input their budget and number of guests to give them a list of typical party items they will need to purchase. Go over budget, and your guests will have to pitch in.
+              </p>
+            </div>
+            
             <div className="text-yellow-200 text-sm flex justify-end">
               <a className="px-2" href="https://react-here-tryna-function-app.netlify.app">Demo</a>
               <a className="px-2" href="https://github.com/bndiep/party-app">GitHub</a>
@@ -127,9 +131,12 @@ function App() {
           
           <div className="p-8">
             <h4 className="text-2xl">Tic-Tac-Toe</h4>
-            <p>
-              A simple implementation of Tic-Tac-Toe intended to be played by two users. The app will display the current player to keep track of the user's turns. There are three possible outcomes: X wins, O wins, or a cats game.
-            </p>
+            <div className="my-2 flex flex-col md:flex-row">
+              <span className="mr-2 p-20 bg-yellow-400 border-yellow-200 rounded-md">Placeholder</span>
+              <p className="my-2 md:ml-2">
+                A simple implementation of Tic-Tac-Toe intended to be played by two users. The app will display the current player to keep track of the user's turns. There are three possible outcomes: X wins, O wins, or a cats game.
+              </p>
+            </div>
             <div className="text-yellow-200 text-sm flex justify-end">
               <a className="px-2" href="https://tictactoe-app.netlify.app"></a>
               <a className="px-2" href="https://github.com/bndiep/tic-tac-toe-app"></a>
@@ -138,9 +145,12 @@ function App() {
           
           <div className="p-8">
             <h4 className="text-2xl">Pig Latin</h4>
-            <p>
-              An app that allows the user to convert their English words into Pig Latin. Has the ability to translate words starting with 'qu' and words in which 'y' acts a vowel. Maybe you can use this app when sending secret messages!
-            </p>
+            <div className="my-2 flex flex-col md:flex-row">
+              <span className="mr-2 p-20 bg-yellow-400 border-yellow-200 rounded-md">Placeholder</span>
+              <p className="my-2 md:ml-2">
+                An app that allows the user to convert their English words into Pig Latin. Has the ability to translate words starting with 'qu' and words in which 'y' acts a vowel. Maybe you can use this app when sending secret messages!
+              </p>
+            </div>
             <div className="text-yellow-200 text-sm flex justify-end">
               <a className="px-2" href="https://react-pig-latin-app.netlify.app">Demo</a>
               <a className="px-2" href="https://github.com/bndiep/pig-latin-app">GitHub</a>
@@ -149,9 +159,12 @@ function App() {
 
           <div className="p-8">
             <h4 className="text-2xl">Blog App</h4>
-            <p>
-              A simple blog app that demonstrates RESTful routes. The user is able to create, view, edit, and delete a blog post. Strong params exist to ensure the user includes all fields in their blog post submission.
-            </p>
+            <div className="my-2 flex flex-col md:flex-row">
+              <span className="mr-2 p-20 bg-yellow-400 border-yellow-200 rounded-md">Placeholder</span>
+              <p className="my-2 md:ml-2">
+                A simple blog app that demonstrates RESTful routes. The user is able to create, view, edit, and delete a blog post. Strong params exist to ensure the user includes all fields in their blog post submission.
+              </p>
+            </div>
             <div className="text-yellow-200 text-sm flex justify-end">
               <a className="px-2" href="https://github.com/bndiep/blog-app">GitHub</a>
             </div>
@@ -164,7 +177,7 @@ function App() {
         <p>Interested in contacting me? Reach me <a className="text-yellow-900" href="mailto:bachdiep.dev@gmail.com"> here</a>.</p>
       </div>
       
-      <footer className="py-2 text-sm flex justify-center bg-gray-800 text-gray-200">Designed and built by Bach Diep using React.js and Tailwind CSS</footer>
+      <footer className="py-2 text-sm flex justify-center text-gray-400">Designed and built by Bach Diep using React.js and Tailwind CSS</footer>
     </div>
   )
 }
