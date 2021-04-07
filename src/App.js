@@ -6,11 +6,11 @@ function App() {
         <div className="h-16 p-4 bg-gray-800 flex justify-end items-center sm:hidden">
           <button className="w-12 h-12 text-white text-sm border border-white rounded-lg">Temp</button>
         </div>
-        <ul className="hidden sm:flex flex-row justify-end">
+        <ul className="pr-4 hidden sm:flex flex-row justify-end">
           <li className="p-4"><a href="/">Home</a></li>
           <li className="p-4"><a href="#skills">Skills</a></li>
           <li className="p-4"><a href="#projects">Projects</a></li>
-          <li className="p-4"><a href="">Art</a></li>
+          <li className="p-4"><a href="/">Art</a></li>
         </ul>
       </header>
       <div className=" my-24 sm:my-72">
@@ -18,7 +18,7 @@ function App() {
           Hi, I'm <span className="font-bold">Bach</span>,
         </h1>
         <h1 className="px-12 w-100 text-6xl tracking-wide">
-          your friendly coder.
+          your friendly <span className="tracking-wide font-mono">coder</span>.
         </h1>
       </div>
 
@@ -37,10 +37,10 @@ function App() {
 
       <div className="px-8 p-4 flex justify-around">
         <a href="mailto:bachdiep.dev@gmail.com">Contact Me</a>
-        <a href="www.linkedin.com/in/bachdiep" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/itsabach" target="_blank">Twitter</a>
-        <a href="https://github.com/bndiep" target="_blank">GitHub</a>
-        <a href="" target="_blank">Resume</a>
+        <a href="www.linkedin.com/in/bachdiep" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/itsabach" target="_blank" rel="noreferrer">Twitter</a>
+        <a href="https://github.com/bndiep" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="/" target="_blank" rel="noreferrer">Resume</a>
       </div>
 
       <div className="mx-8 py-20">
@@ -138,8 +138,8 @@ function App() {
               </p>
             </div>
             <div className="text-yellow-200 text-sm flex justify-end">
-              <a className="px-2" href="https://tictactoe-app.netlify.app"></a>
-              <a className="px-2" href="https://github.com/bndiep/tic-tac-toe-app"></a>
+              <a className="px-2" href="https://tictactoe-app.netlify.app">Demo</a>
+              <a className="px-2" href="https://github.com/bndiep/tic-tac-toe-app">GitHub</a>
             </div>
           </div>
           
